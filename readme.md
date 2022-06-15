@@ -1,5 +1,12 @@
 #   Backend Server 
 
+-   Use
+```
+    $ npm install
+```
+
+
+
 Backend server for an ecommerce made with NodeJS & Javascript & Express to consumme with Angular
 -   Arquitectura for an RestfullAPI
 1.  C   POST
