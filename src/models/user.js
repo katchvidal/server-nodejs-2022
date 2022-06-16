@@ -5,5 +5,5 @@ const userSchema = Schema({
 
 })
 
-const User = model('Product', userSchema)
+const User = model('User', userSchema)
 module.exports = { User }

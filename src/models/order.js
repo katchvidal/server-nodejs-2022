@@ -5,5 +5,5 @@ const orderSchema = Schema({
 
 })
 
-const Order = model('Product', orderSchema)
+const Order = model('Order', orderSchema)
 module.exports = { Order }

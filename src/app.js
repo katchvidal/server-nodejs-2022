@@ -4,12 +4,14 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const chalk = require('chalk')
 require('dotenv').config()
+// require("dotenv").config(__dirname + ".env") if you want to change the directory path of .env file
 const app = express()
 const PORT = 3000
 const api = process.env.API_CONSTANTS
 
 //  Call Routes
 const productRoutes = require('./routers/product')
+const categoryRoutes = require('./routers/category')
 
 //  Middleware
 app.use(express.json())
@@ -19,6 +21,7 @@ app.options('*', cors())
 
 //  Routers
 app.use(`${api}/products`, productRoutes)
+app.use(`${api}/categories`, categoryRoutes)
 
 //  Database Connection
 const MOGONURI = process.env.MONGOCDN
